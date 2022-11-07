@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Autenticação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="toggleToSignIn()">
+
+    <form id="signIn">
+        <section>
+            <h2>Sign in</h2>
+            <p><input type="email" name="" id="" placeholder="Email"></p>
+            <p><input type="password" name="" id="" placeholder="Senha"></p>
+            <div>
+                <input type="checkbox" name="" id="">
+                <label for="">Lembrar senha?</label>
+            </div>
+            <p><input type="submit" value="Entrar"></p>
+            <hr>
+            <p>Não tem uma conta? <a onclick="toggleToSignUp()">Cadastre-se aqui</a></p>
+        </section>
+        <img src="https://images.pexels.com/photos/4467683/pexels-photo-4467683.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt="">
+    </form>
+
+    <form id="signUp">
+        <img src="https://images.pexels.com/photos/4347368/pexels-photo-4347368.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt="">
+        <section>
+            <h2>Sign up</h2>
+            <p><input type="email" name="" id="" placeholder="Email"></p>
+            <p><input type="password" name="" id="" placeholder="Senha"></p>
+            <p><input type="submit" value="Cadastrar"></p>
+            <hr>
+            <p>Já tem uma conta? <a onclick="toggleToSignIn()">Faça login aqui</a></p>
+        </section>
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
